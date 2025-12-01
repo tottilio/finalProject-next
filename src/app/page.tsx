@@ -1,9 +1,10 @@
-import DashboardPage from "./dashboard/page";
+import RoutesList from "../components/RoutesList";
 
 const HomePage = () => {
     return (
-        <DashboardPage/>
+        <div>
+            <RoutesList/>
+        </div>
     );
 }
- 
-export default HomePage;
+ export default HomePage;

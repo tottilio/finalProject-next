@@ -4,7 +4,7 @@ import { Roboto } from 'next/font/google';
 import './globals.css'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
 import { Sidebar } from 'lucide-react';
-import Header from './_components/Header';
+import Header from '../components/Header';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,7 +30,6 @@ export default function RootLayout({
       <body className={roboto.variable}>
         <AppRouterCacheProvider options={{ key: 'css' }}>
           <Header/>
-          <Sidebar/>
             {children}
         </AppRouterCacheProvider>
       </body>
