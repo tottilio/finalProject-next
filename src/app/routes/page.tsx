@@ -6,7 +6,7 @@ import { Button } from "@heroui/react";
 
 
 const RoutePage = async () => {
-
+    
     const res = await fetch(`${API_URL}/routes`)
     const routes: Route[] = await res.json()
 
